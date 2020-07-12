@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Application</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<h1 align="center">WebSocket: Customer Trouble Ticket Application</h1>
+<h4 align="center">Please use our Smart Chat Service for filing your complaint</h4>
+<h4>&nbsp;</h4>
+
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">Click connect or disconnect:</label>
+                    <button id="connect" type="button">Connect</button>
+                    <button id="disconnect" type="button" disabled="disabled">Disconnect
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="chat">
+                <thead>
+                <tr>
+                <br>
+                    <th>We are delighted to welcome you!<br><br>Message box:</th>
+                </tr>
+                </thead>
+                <tbody id="message">
+                </tbody>
+            </table>
+        </div>
+            <div class="row">
+        
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <textarea id="msg" placeholder="To start, please enter your customer id" required></textarea>
+                </div>
+                <button id="send" type="submit">Send</button>
+            </form>
+        </div>
+        </div>
+    </div>
+ 
+</div>
+</body>
+</html>
